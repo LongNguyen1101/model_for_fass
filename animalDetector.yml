@@ -1,0 +1,11 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  animal-detector:
+    lang: python3-debian
+    handler: ./animalDetectorFunction
+    image: registry-harbor.ngodat0103.me/lab5/animal-detector:v1
+
+
